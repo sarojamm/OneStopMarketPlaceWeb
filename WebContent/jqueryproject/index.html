@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich">
+      
+      <head>
+		<title>AT&amp;T Lightspeed BBT: Home Page</title>
+	    <link rel="stylesheet" href="./styles/lsbbt.css" type="text/css">		
+		<script type="text/javascript" src="./javascript/jquery/1.4/jquery-latest.js"></script>		
+		<script type="text/javascript" src="./javascript/lsbbtjquery.js"></script>
+	    <script type="text/javascript" src="./javascript/links.js"></script>	     
+	   
+	</head>
+	<body  onLoad="onLoadUrls()">
+ <ui:composition template="/layout/mylayout.xhtml">
+  
+	 <ui:define name="content">
+	 	
+		<div id="head">
+			<span id="attlogo" title="at&amp;t"></span> 
+			<span id="lsbbtlogo" title="LSBBT"></span> 			
+		</div>
+ 
+	<div id="body">
+		<div id="menu">
+			<ul id="topnav">
+				<li ><a href="#" >Custom Menus</a>
+					<ul id="cstopnav">	
+					
+				<li><a   href="def_value" id="link1_1"  title="">UFO Tools</a>
+							<ul>
+								<li><a href="/LSLPA/realTimeLPA?first=true" id="link1.1_1_1" title="Real time performance check of local loop">Real Time LPA</a></li>							
+								<li><a href="/rgqualitycheck/rgqualitycheck.jsp" id="link1.1_1_2" title="Run this tool after RG/CPE in sync for install or repair">Quality Check</a></li>
+								<li><a href="def_value" id="link1.1_1_3" title="">Wireless AP Real Time Tool</a></li>
+								<li><a href="def_value" id="link1.1_1_4" title="">CPE Real Time</a></li>
+								<li><a href="def_value" id="link1.1_1_5" title="">STB A/V Performance Tool</a></li>								
+								<li><a href="/LSLPA/realNidCheck?first=true" id="link1.1_1_6" title="/LSLPA/realNidCheck?first=true">NID Check</a></li>							
+								<li><a href="/LSLPA/realSaiCheck?first=true" id="link1.1_1_7" title="Use Meter to sync port at SAI and run this tool for installation and port change">SAI Check</a></li>
+								<li><a href="def_value" id="link1.1_1_8" title="">SELT</a></li>
+								<li><a href="def_value" id="link1.1_1_9" title="">FTTP Real Time Tool</a></li>
+								<li><a href="def_value" id="link1.1_1_10" title="">AMT</a></li>								
+								<li><a href="def_value" id="link1.1_1_11" title="">Trouble Analysis</a></li>							
+								<li><a href="def_value" id="link1.1_1_12" title="">Bonding Test Tool</a></li>
+								<li><a href="def_value" id="link1.1_1_12.1" title="">Neighbor Line Search</a> </li> 
+								<li><a href="def_value" id="link1.1_1_13" title="">7330 Error Summary</a></li>
+								<li><a href="def_value" id="link1.1_1_14" title="">Test History Tool</a></li>
+								<li><a href="def_value" id="link1.1_1_15" title=""> UFO Tools for Mobile</a></li>								
+							</ul>
+						</li>
+						<li><a href=""  href="def_value" id="link1_2"  title="">CIM Tools</a>
+							<ul>
+								<li><a href="/LSLPA/realSaiCheck?first=true" id="link1.1_2_1" title="Use Meter to sync port at SAI and run this tool for installation and port change">SAI Check</a></li>
+								<li><a href="/LSLPA/realNidCheck?first=true" id="link1.1_2_2" title="Use Meter to sync port at NID and run this tool">NID Check</a></li>
+							    <li><a href="def_value" id="link1.1_2_3" title="">Sync-up Check</a></li>
+								<li><a href="/LSLPA/realTimeLPA?first=true" id="link1.1_2_4" title="Real time performance check of local loop">Real Time LPA</a></li>
+								<li><a href="/rgqualitycheck/rgqualitycheck.jsp" id="link1.1_2_4.1" title="Run this tool after RG/CPE in sync for install or repair">Quality Check</a></li>							
+							<li><a href="def_value" id="link1.1_2_5" title="">CPE Real Time </a></li>
+								<li><a href="def_value" id="link1.1_2_6" title="">SELT</a></li>
+								<li><a href="def_value" id="link1.1_2_7" title="">FTTP Real Time Tool</a></li>
+								<li><a href="def_value" id="link1.1_2_8" title="">AMT</a></li>
+								<li><a href="def_value" id="link1.1_2_9" title="">Trouble Analysis</a></li>
+								<li><a href="def_value" id="link1.1_2_10" title="">Bonding Test Tool</a></li>	
+									<li><a href="def_value" id="link1.1_2_11" title="">Neighbor Line Search</a> </li>
+													
+								<li><a href="def_value" id="link1.1_2_12" title="">7330 Error Summary</a>
+								<li><a href="def_value" id="link1.1_2_13" title="">Test History Tool</a>
+							</ul>
+						</li>	
+						<li><a href=""  href="def_value" id="link1_3" title="">C&E Tools</a>
+							<ul>
+								<li><a href="/LSLPA/realTimeLPA?first=true" id="link1.1_3_1" title="Real time performance check of local loop">Real Time LPA </a> </li>
+								<li><a href="def_value" id="link1.1_3_2" title="">Port Admin Tool</a> </li>
+								<li><a href="def_value" id="link1.1_3_3" title="">Neighbor Line Search</a> </li>
+								<li><a href="def_value" id="link1.1_3_4" title="">Multiple BAN Search Tool</a> </li>
+								<li><a href="/LSLPA/dslamSearch.jsp" id="link1.1_3_5" title="Real time 7330 inventory and alarm check">Real Time Inventory/Alarm Tool</a> </li>
+							</ul>
+						</li>
+						<li><a href="def_value" id="link1_4" title="">Customer	Care Tools</a>
+							<ul>
+								<li><a href="def_value" id="link1_1_1" title="">Trouble	Analysis Tool</a></li>
+								<li><a href="/rgqualitycheck/rgqualitycheck.jsp" id="link1_1_2" title="Run this tool after RG/CPE in sync for install or repair">Quality Check</a></li>
+								<li><a href="def_value" id="link1_1_3" title="">FTTP Real Time Tool</a></li>
+								<li><a href="def_value" id="link1_1_4" title="">MISCONF STB Clean up Tool</a></li>
+								<li><a href="def_value" id="link1_1_5" title="">Retrieve AMT Result</a></li>
+							</ul>
+						</li>
+			
+						<li><a href="def_value" id="link1_5" title="">U-verse NOC Tools</a>
+							<ul>
+								<li><a href="def_value" id="link1_3_1" title="">Port Swap/RG Swap Search </a> </li>
+								<li><a href="def_value" id="link1_3_2" title="">Multi-BAN Commonality Search</a> </li>
+								<li><a href="def_value" id="link1_3_3" title="">CVoIP Provisioning Tool</a> </li>
+								<li><a href="def_value" id="link1_3_4" title="">CPE Real Time Tool</a> </li>
+								<li><a href="def_value" id="link1_3_5" title="">SAM Real Time Tool</a> </li>
+							</ul>
+						</li>
+				
+					</ul>
+				</li>				
+ 
+				<li><a href="#" id="link3" title="">Receiver </a>
+					<ul id="retopnav">
+						<li><a href="def_value" id="link3_1" title="">STB A/V Performance Tool </a></li>
+						<li><a href="def_value" id="link3_2" title="">MotoPlayer Test Result Search Tool</a></li>
+					</ul>
+				</li>
+				<li><a href="#" id="link2" title="">WAP </a>
+					<ul>
+						<li><a href="def_value" id="link2_1" title="">Wireless AP Real Time Tool</a></li>
+					</ul>
+				</li>
+				<li><a href="#" id="link4" title="">RG </a>
+					<ul id="rgtopnav">
+						<li><a href="/rgqualitycheck/rgqualitycheck.jsp" id="link4_1" title="Run this tool after RG/CPE in sync for install or repair">Quality Check </a></li>
+						<li><a href="def_value" id="link4_2" title="">CPE Real Time Tool </a></li>
+						<li><a href="def_value" id="link4_3" title="">Trouble Analysis Tool</a></li>
+						<li><a href="def_value" id="link4_4" title="">CPE Historical Tool</a></li>
+						<li><a href="def_value" id="link4_6" title="">Historical Trending Tool </a></li>
+						<li><a href="def_value" id="link4_7" title="">Test History Tool </a> </li>
+						
+					</ul> <!--Subnav Ends Here-->
+				</li>
+ 
+ 
+ 
+                <li><a href="#" id="link10" title="">Test Set</a>
+					<ul id="tstopnav">					
+						<li><a href="def_value" id="link10_1" title="">Testset Tracking Tool </a></li>					
+					</ul> <!--Subnav Ends Here-->
+				</li>
+				
+				
+				
+				<li><a href="#" id="link11" title="">CVoIP </a>
+					<ul id="ciptopnav">
+					
+						<li><a href="def_value" id="link11_1" title="">CVoIP Provisioning Tool </a></li>
+					</ul> <!--Subnav Ends Here-->
+				</li>
+ 
+				<li><a href="#" >FTTN/FTTP </a>
+					<ul id="fnfptopnav">
+						<li><a href="#" id="link5_1" title="">Real Time Checks </a>
+							<ul>
+								<li><a href="/LSLPA/realTimeLPA?first=true" id="link5_1_1" title="Real time performance check of local loop">Real Time LPA </a></li>
+								<li><a href="/LSLPA/realSaiCheck?first=true" id="link5_1_2" title="Use Meter to sync port at SAI and run this tool for installation and port change">SAI Check </a></li>
+								<li><a href="/LSLPA/realNidCheck?first=true" id="link5_1_3" title="Use Meter to sync port at NID and run this tool ">NID Check </a></li>
+								<li><a href="/LSLPA/dslamSearch.jsp" id="link5_1_4" title="Real time 7330 inventory and alarm check">Real Time Inventory/Alarm Tool </a></li>
+							</ul>
+						</li>
+						<li><a href="#" id="link5_2" title="">Historical Checks </a>
+							<ul>
+								<li><a href="def_value" id="link5_2_1" title="">Show RF </a></li>
+								<li><a href="def_value" id="link5_2_2" title="">7330 Historical Trending </a></li>
+								<li><a href="def_value" id="link5_2_3" title="">7330 Error Summary </a></li>
+								<li><a href="def_value" id="link5_2_4" title="">Historical Trending Tool </a></li>
+								<li><a href="def_value" id="link5_2_5" title="">PUMA Tool </a> </li>
+								<li><a href="def_value" id="link5_2_6" title="">VRAD Ranking Tool </a> </li>
+								<li><a href="def_value" id="link5_2_7" title="">Test History Tool </a> </li>
+								
+							</ul>
+						</li>
+						<li><a href="#" id="link5_3" title="">Intrusive Test Tools </a>
+							<ul>
+								<li><a href="def_value" id="link5_3_1" title="">SELT </a></li>
+								<li><a href="def_value" id="link5_3_2" title="">Bonding Test Tool </a></li>
+								<li><a href="def_value" id="link5_3_3" title="">AMT </a></li>
+								<li><a href="def_value" id="link5_3_4" title="">ONT Activation Tool </a></li>
+								<li><a href="def_value" id="link5_3_5" title="">Port Admin Tool </a></li>
+							</ul>
+						</li>
+						<li><a href="#" id="link5_4" title="">Search Tools </a>
+							<ul>
+								<li><a href="def_value" id="link5_4_1" title="">Neighbor Line Search </a></li>
+								<li><a href="def_value" id="link5_4_2" title="">Multiple BAN Search Tool </a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#" >7x50 </a>
+					<ul id="s7x5topnav">						
+						<li><a href="def_value" id="link6_1" title="">SAM Real Time Tool </a></li>
+					</ul> 
+				</li>
+				<li><a href="#">End-to-End </a>
+					<ul id="e2etopnav">
+						<li><a href="def_value" id="link7_1" title="">End to End Tool </a></li>
+						<li><a href="def_value" id="link7_2" title="">SAM Real Time Tool </a></li>
+						<li><a href="def_value" id="link7_3" title="">Multiple BAN Search Tool </a></li>						
+					</ul> 
+				</li>
+				<li><a href="def_value" id="link8_1" title="">Batch Reports </a> </li>
+				<li><a href=# id="link9" title="">Help </a>
+					<ul id="helptopnav">
+					    <li >&nbsp;&nbsp;&nbsp;LSBBT 9.0 </li>
+						<li><a href="def_value" id="link9_1" title="">About LSBBT</a></li>
+						<li><a href="def_value" id="link9_2" title="">Release Information </a></li>
+						<li><a href="def_value" id="link9_3" title="">Online Documents</a></li>
+						<li><a href="def_value" id="link9_5" title="">LSBBT Classic</a></li>
+					</ul> 
+				</li>
+			</ul>
+		</div>
+ 
+	<div id="etoemap">
+ 
+	<div id="stb1" class="mapmousehover">
+		<div class="dropdown" id="stb1menu">
+			<ul id="nav">
+				<li><a href="def_value" id="maplink3_1" title="">STB A/V Performance Tool </a></li>		 
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="stb2" class="mapmousehover">
+		<div class="dropdown" id="stb2menu">
+			<ul id="nav">
+				<li><a href="def_value" id="maplink3_2" title="">STB A/V Performance Tool </a> </li>
+			    <li><a href="def_value" id="maplink3_3" title="">MotoPlayer Test Result Search Tool</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<div id="S7x501" class="mapmousehover">
+		<div class="dropdown" id="S7x501menu">
+			<ul id="nav">
+				<li><a  href="def_value" id="maplink6_1_1" title="">SAM Real Time Tool </a></li>
+				<!-- <li>  <a  href="def_value" id="maplink3_2" title="">MotoPlayer Test Result Search Tool</a></li>-->
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="S7x502" class="mapmousehover">
+		<div class="dropdown" id="S7x502menu">
+			<ul id="nav">
+				<li><a  href="def_value" id="maplink6_1_2" title="">SAM Real Time Tool </a> </li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="S7x503" class="mapmousehover">
+		<div class="dropdown" id="S7x503menu">
+			<ul id="nav">
+				<li><a  href="def_value" id="maplink6_1_3" title="">SAM Real Time Tool </a> </li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="S7x504" class="mapmousehover">
+		<div class="dropdown" id="S7x504menu">
+			<ul id="nav">
+				<li><a  href="def_value" id="maplink6_1_4" title="">SAM Real Time Tool </a> </li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="S7x505" class="mapmousehover">
+		<div class="dropdown" id="S7x505menu">
+			<ul id="nav">
+				<li><a  href="def_value" id="maplink6_1_5" title="">SAM Real Time Tool </a> </li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="olt" class="mapmousehover">
+		<div class="dropdown" id="oltmenu">
+			<ul id="nav">
+				<li><a href="/LSLPA/realTimeLPA?first=true" id="maplink7_1" title="Real time performance check of local loop">Real Time LPA </a> </li>
+				<li><a  href="def_value" id="maplink7_2" title="">ONT Activation Tool </a> </li>
+				<li><a  href="def_value" id="maplink7_3" title="">Multiple BAN Search Tool </a> </li>
+				<li><a href="def_value" id="maplink7_4" title="">Test History Tool </a> </li>
+			
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<div id="S7x30" class="mapmousehover">
+		<div class="dropdown" id="S7x30menu"> 
+			<ul id="mapnav"> 
+						<li><a  href="#" id="maplink5_1" title="">Real Time Checks </a>
+							 <ul>
+								<li><a  href="/LSLPA/realTimeLPA?first=true" id="maplink5_1_1" title="Real time performance check of local loop">Real Time LPA </a> </li>
+								<li><a  href="/LSLPA/realSaiCheck?first=true" id="maplink5_1_2" title="Use Meter to sync port at SAI and run this tool for installation and port change">SAI Check </a> </li>
+								<li><a  href="/LSLPA/realNidCheck?first=true" id="maplink5_1_3" title="Use Meter to sync port at NID and run this tool">NID Check </a> </li>
+								<li><a  href="/LSLPA/dslamSearch.jsp" id="maplink5_1_4" title="Real time 7330 inventory and alarm check">Real Time Inventory/Alarm Tool </a> </li>
+							</ul>
+						</li>
+						<li><a  href="#" id="maplink5_2" title="">Historical Checks </a>
+							<ul>
+								<li ><a  href="def_value" id="maplink5_2_1" title="">Show RF </a> </li>
+								<li><a  href="def_value" id="maplink5_2_2" title="">7330 Historical Trending </a> </li>
+								<li><a  href="def_value" id="maplink5_2_3" title="">7330 Error Summary </a> </li>
+								<li><a  href="def_value" id="maplink5_2_4" title="">Historical Trending Tool </a> </li>
+								<li><a  href="def_value" id="maplink5_2_5" title="">PUMA Tool </a></li>
+								<li><a  href="def_value" id="maplink5_2_6" 	title="">VRAD Ranking Tool </a></li>
+								<li><a href="def_value" id="maplink5_2_7" title="">Test History Tool </a> </li>			
+							</ul>
+						</li>
+						<li><a  href="#" id="maplink5_3" title="These tools are intrusive  and interrupt customer U-verse service during testing.  Testing is logged and monitored.">Intrusive Test Tools </a>
+							<ul>
+								<li ><a  href="def_value" id="maplink5_3_1" title="">SELT </a>	</li>
+								<li><a  href="def_value" id="maplink5_3_2" title="">Bonding Test Tool </a> </li>
+								<li><a  href="def_value" id="maplink5_3_3" title="">AMT </a> </li>
+								<li><a  href="def_value" id="maplink5_3_5" title="">Port Admin Tool </a> </li>
+							</ul>
+						</li>
+						<li><a  href="#" id="maplink5_4" title="">Search Tools </a>
+							<ul>
+								<li ><a  href="def_value" id="maplink5_4_1" title="">Neighbor Line Search </a> </li>
+								<li><a  href="def_value" id="maplink5_4_2" title="">Multiple BAN Search Tool </a> </li>
+							</ul>
+						</li>
+					</ul>				
+		</div>
+	</div>
+ 
+ 
+ <div id="wap" class="mapmousehover">
+      <div  class="dropdown" id="wapmenu">
+	      <ul id="nav">
+            <li> <a  href="def_value" id="maplink2_1" title="">Wireless AP Real Time Tool</a></li>
+         </ul>
+	     <div class="clear"></div>
+      </div>
+</div>
+<div id="rg1" class="mapmousehover">
+      <div class="dropdown"  id="rg1menu">
+	      <ul id="nav">
+               <li>  <a  href="/rgqualitycheck/rgqualitycheck.jsp" id="maplink4_1_1" title="Run this tool after RG/CPE in sync for install or repair">Quality Check  </a></li>
+	           <li>  <a  href="def_value" id="maplink4_1_2" title="">CPE Real Time Tool </a></li>
+	           <li>  <a  href="def_value" id="maplink4_1_3" title="">Trouble Analysis Tool</a></li>
+	           <li>  <a  href="def_value" id="maplink4_1_4" title="">CPE Historical Tool</a></li>
+	         <!--   <li>  <a  href="def_value" id="maplink4_1_5" title="">Testset Tracking Tool </a></li> -->
+	           <li>  <a  href="def_value" id="maplink4_1_6" title="">Historical Trending Tool  </a></li>
+	           <li><a href="def_value" id="maplink4_1_8" title="">Test History Tool </a> </li>
+			
+	         <!--   <li>  <a  href="def_value" id="maplink4_1_7" title="">CVoIP Provisioning Tool </a></li>   -->
+          </ul>
+	     <div class="clear"></div>
+      </div>
+</div>
+ 
+<div id="rg2" class="mapmousehover">
+      <div  class="dropdown" id="rg2menu">
+	      <ul id="nav">
+               <li>  <a  href="/rgqualitycheck/rgqualitycheck.jsp" id="maplink4_2_1" title="Run this tool after RG/CPE in sync for install or repair">Quality Check  </a></li>
+	           <li>  <a  href="def_value" id="maplink4_2_2" title="">CPE Real Time Tool </a></li>
+	           <li>  <a  href="def_value" id="maplink4_2_3" title="">Trouble Analysis Tool</a></li>
+	           <li>  <a  href="def_value" id="maplink4_2_4" title="">CPE Historical Tool</a></li>
+	         <!--   <li>  <a  href="def_value" id="maplink4_2_5" title="">Testset Tracking Tool </a></li> -->
+	           <li>  <a  href="def_value" id="maplink4_2_6" title="">Historical Trending Tool  </a></li>
+	          <!--   <li>  <a  href="def_value" id="maplink4_2_7" title="">CVoIP Provisioning Tool </a></li>   -->
+	              <li><a href="def_value" id="maplink4_2_8" title="">Test History Tool </a> </li>
+			
+          </ul>
+	     <div class="clear"></div>
+      </div>
+</div>
+<div id="caption"></div>
+ 
+</div>
+
+	 
+	</div>
+	
+	      
+ 	      
+	 </ui:define>
+</ui:composition>
+</body>
+
+</html>
+
+
+ 
+

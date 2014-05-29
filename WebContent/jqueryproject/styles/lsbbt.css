@@ -1,0 +1,414 @@
+/* Colors used in this tool
+6396CE: blue background
+8EA4B3: not used
+DBEAF5: light blue in menu
+216491: dark blue in border for menu
+EAEAEA: gray in menu
+*/
+
+body{
+	background:#6396CE;
+	margin:0;
+	padding:0;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#head{
+	width:100%;
+	height:130px;
+	text-align: center;
+}
+#attlogo{
+	position:absolute;
+	left:25px;
+	height:60px;
+	width:146px;
+	top:30px;
+	background: url("../images/att_logo.gif") top no-repeat;
+}
+#lsbbtlogo{
+	position:absolute;
+	left:655px;
+	height:60px;
+	width:146px;
+	top:37px;
+	background: url("../images/lsbbt.gif") top no-repeat;
+}
+#body{	
+	position:relative;
+	width:100%;
+	height:450px;
+	border:1px solid #6396CE;
+	text-align: center;
+	background:#ffffff;
+}
+#menu{
+	position:relative;
+	top:0px;
+	height:40px;
+	z-index:10;
+}
+
+#loginContainerContent{
+	top:100px;	
+	width:100%;
+	height:490px;
+	border:1px solid #8EA4B3;/*6396CE 8EA4B3*/
+	text-align: center;
+
+}
+
+
+	
+#loginContainer{
+	position:absolute;
+	left:0px;
+	top:10px;
+	height:5px;
+	width:100%;
+	margin:0 0;
+	padding:0;
+	
+}
+
+
+#foot{
+	position:absolute;
+	color:#fff;
+	left: 0px;
+	top :550px;
+	text-align:center;
+	width:100%;
+	background:#6396CE;
+	padding-bottom:5px;	
+	z-index:1;
+}
+/* MENU ***************************************************************/
+/* Menu row */
+ul#topnav, ul#mapnav {
+	position: relative; /*--Set relative positioning on the unordered list itself - not on the list item--*/
+	background-color:#DBEAF5; /* light blue */
+	margin: -1px 0px 0px 10px; /* top right bottom left */ 
+	padding: 0px;
+	float: left;
+	list-style: none;
+	font-size: 12px;
+	border-style:solid;
+	border-color:#6396ce;
+    border-width:1px;
+    border-collapse:collapse;	
+}
+/* Each of menu column */
+ul#topnav li, ul#mapnav li { 
+    background:#DBEAF5; 
+    height:24px;      
+	float: left;
+	display:block;
+	margin: -1px -1px -1px -1px; 
+	padding:  6px 0px 6px 0px; /* top right bottom left */		
+	white-space:nowrap;
+	text-align:left;
+	border-style:solid;
+	border-color:#6396ce;
+    border-width:1px;
+    border-collapse:collapse;
+}
+/* each of menu item */
+ul#topnav li a, ul#mapnav li a{
+	color:#216491;
+	margin:0px 0px 0px 0px; /* top right bottom left */
+	padding: 6px 12px 6px 12px; /* top right bottom left */
+	display: block;	
+	text-decoration: none;
+}
+
+ul#topnav li:hover, ul#mapnav li:hover { 
+	color:#216491;
+    background:#EAEAEA;  /* light gray */
+
+}
+ul#topnav li a:hover, ul#mapnav li a:hover { 
+	color:#000000;
+    background:#EAEAEA; 
+    text-decoration: underline;
+}
+ul#topnav li ul, ul#mapnav li ul {	
+	position: absolute;
+	top:32px;
+	display: none; /*--Hide by default--*/
+	padding: 0px;
+	margin: 0px 0px 0px 10px; /* top right bottom left */
+}
+ul#topnav li ul li, ul#mapnav li ul li{	
+	border-radius: 0px;
+	padding: 4px 3px 4px 3px; /* top right bottom left */
+}
+ul#topnav li:hover ul, ul#mapnav li:hover ul {  
+    border-right:1px solid #6396CE;
+    border-left:1px solid #6396CE;   
+    background:#DBEAF5;  
+    display: block;
+} 
+ul#topnav li ul li:hover,ul#nav li ul li:hover {
+    background:#EAEAEA; 
+}
+ul#topnav li ul li ul,#S7x30menu ul li ul {
+	position: relative;
+	top: -7px;
+	left:80px;
+	display: none;
+}
+
+ul#topnav li ul li ul li, ul#nav li ul li ul li{
+	display: none;
+}
+ul#topnav li ul li:hover ul li , ul#nav li ul li:hover ul li {
+	display:block;
+}
+
+/**/
+ 
+ul#nav li ul li ul {
+	position: relative;
+	top: 7px;
+	display: none;
+}
+
+ul#nav li ul{
+	display:block;
+}
+#uetopnav {
+	width:190px;
+}
+#uetopnav li {
+	width:190px;
+}
+
+
+#S7x30menu  ul li ul li{
+	left:50px;
+	width:215px;
+}
+
+#fnfptopnav,#fnfptopnav li,#fnfptopnav li ul,
+#fnfptopnav li ul li {
+	width:220px;
+}
+
+
+#retopnav,#retopnav li,#retopnav li ul,
+#cstopnav,#cstopnav li,#cstopnav li ul,
+#cstopnav li ul li {
+	width:260px;
+}
+
+#e2etopnav,#e2etopnav li,#e2etopnav li ul{
+	width:175px;
+}
+
+
+#helptopnav,#helptopnav li,#helptopnav li ul,
+#rgtopnav,#rgtopnav li,#rgtopnav li ul,#rgtopnav li ul li {
+	width:160px;
+}
+
+/* MAP ***************************************************************/
+#S7x30 ul li ul li {
+	display:block;
+}
+#nav { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	position:relative;
+   	left:0px;
+    top:0px;
+    margin:0px;  
+    padding:0px;       
+    list-style:none; 
+    color:#ffffff;
+    background-color:#DBEAF5;   
+    display:block;
+    text-align:left; 
+}    
+#nav li {  
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;	 
+    white-space:nowrap;
+    display:block;   
+    vertical-align:middle;
+	background-color:#DBEAF5;        
+    padding:6px 12px 10px 12px;      
+    border-style:solid;
+	border-color:#6396ce;
+    border-width:1px;
+    border-collapse:collapse;   
+    margin: -1px -1px -1px -1px;     
+} 
+#nav li a { 
+	float:left;  
+    margin:0px; 
+    white-space:nowrap;    
+    display:block; 
+    text-decoration:none;
+    color:#216491;	
+	border-radius: 0px;
+	padding: 0px 0px 0px 0px; 
+}
+#nav li:hover,  #nav li ul li{ 
+    text-decoration:none;
+    color:#216491;        
+    background-color:#EAEAEA;    
+}
+#nav li a:hover {
+	color:#000000;
+	background-color:#EAEAEA; 
+	text-decoration:underline;
+}
+.dropdown{
+    position:relative;
+    top:20px; 
+    text-decoration:none;
+}
+#caption {	
+	position:absolute;
+    left:958px;
+    top:15px;
+    height:125px;
+    width:250px;  
+	font-size: 12px;
+	text-align:left;
+    margin:0 auto;  	 	
+}
+
+/*   image map start  */
+.mapmousehover{
+	
+}
+#stb1{
+    position:absolute;
+    left:145px;
+    top:130px;
+    height:40px;
+    width:70px;
+    margin:0 auto;
+}
+#stb2{
+    position:absolute;
+    left:100px;
+    top:225px;
+    height:40px;
+    width:70px;    
+}
+#S7x501{
+	position:absolute;
+    left:700px;
+    top:230px;
+    height:40px;
+    width:70px;    
+    margin:0 auto;
+}
+
+#S7x502{
+    position:absolute;
+    left:850px;
+    top:230px;
+    height:40px;
+    width:70px;    
+      margin:0 auto;
+}
+#S7x503{
+     position:absolute;
+    left:780px;
+    top:136px;
+    height:40px;
+    width:70px; 
+      margin:0 auto; 
+}
+#S7x504{
+    position:absolute;
+    left:650px;
+    top:126px;
+    height:40px;
+    width:70px; 
+}
+#S7x505{
+    position:absolute;
+    left:560px;
+    top:230px;
+    height:40px;
+    width:70px;    
+}
+
+#S7x30{
+    position:absolute;
+    left:460px;
+    top:235px;
+    height:40px;
+    width:70px;    
+}
+
+#olt{
+    position:absolute;
+    left:570px;
+    top:125px;
+    height:30px;
+    width:50px;    
+}
+#oltmenu li{
+	height:15px;
+	width: 160px;
+}
+
+
+
+#wap{
+    position:absolute;
+    left:320px;
+    top:97px;
+    height:50px;
+    width:70px;  
+}
+
+
+#rg1{
+    position:absolute;
+    left:387px;
+    top:77px;
+    height:35px;
+    width:70px; 
+}
+#rg2{
+    position:absolute;
+    left:310px;
+    top:260px;
+    height:35px;
+    width:70px; 
+}
+ #stb1menu li ,#rg1menu li,#rg2menu li, #wapmenu li, #S7x30menu li{	
+	height:15px;
+	width: 160px;
+}
+
+#stb2menu li {	
+	height:15px;
+	width: 220px;
+}
+
+
+#S7x501menu li,#S7x502menu li,#S7x503menu li,
+#S7x504menu li,#S7x505menu li {
+	height:15px;
+	width: 120px;
+}
+
+
+#etoemap{
+	position:absolute;
+	top:0px;	
+	left:10px;
+	height:425px;
+	width:1050px;
+	background:#ffffff url('../images/lsbbt_etoe_1024.jpg') top no-repeat;;
+}
